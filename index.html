@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <!-- Importing font from google figtree-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+   body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: #F4D04E;
+    font-family: "Figtree", sans-serif;
+   }
+
+   .card{
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 24px;
+    width: 384px;
+    height: auto;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 100%);
+   }
+
+   .card__img img{
+    width: 100%;
+    border-radius: 10px;
+   }
+
+   .card__content{
+    margin: 24px 0px;
+   }
+
+   .card__banner{
+    display: inline-block;
+    border-radius: 4px;
+    padding: 4px 12px;
+    background-color: #F4D04E;
+   } 
+
+   .card__content > div:not(:last-child){  
+    margin-bottom: 12px;
+   }
+
+   .card__banner h6{
+    font-weight: bolder;
+    color: #000;
+   }
+
+   .card__text{
+    color: #7F7F7F;
+   }
+
+   .card__author{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+   }
+
+   .card__author img{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+   }
+   
+   .card__author p{
+    font-size: 14px;
+    margin-left: 10px;
+   }
+
+  </style>
+</head>
+<body>
+   
+   <div class="card">
+
+    <!-- Card Image -->
+       <div class="card__img">
+        <img src="./assets/images/illustration-article.svg" alt="blogimg">
+       </div>
+
+
+       <!--Card Content-->
+       <div class="card__content">
+        
+        <!-- Card Banner -->
+        <div class="card__banner">
+           <h5>Learning</h6>
+        </div>
+
+        <!-- Card Publish Date -->
+        <div class="card__publish">
+          <p>Published 21 Dec 2023</p>
+        </div>
+
+        <!-- Card title-->
+        <div class="card__title">
+          <h2>HTML & CSS foundations</h2>
+        </div>
+
+        <!-- Card text-->
+        <div class="card__text">
+          <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        </div>
+
+       </div>
+        <!-- Card Author-->
+       <div class="card__author">
+            <img src="./assets/images/image-avatar.webp" alt="">
+            <p>Greg Hooper</p>
+       </div>
+
+   </div>   
+
+</body>
+</html>
